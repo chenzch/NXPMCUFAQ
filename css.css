@@ -21,16 +21,16 @@ details { padding-left: 40px; }
 
 details summary { padding-left: 60px; }
 
-details p { padding-left: 80px; }
+details p { padding-left: 100px; }
 
-details details { padding-left: 60px; }
+details details { padding-left: 20px; }
 
 details details summary { padding-left: 80px; }
 
-details details p { padding-left: 100px; }
+details details p { padding-left: 120px; }
 
-details details details { padding-left: 80px; }
+details details details { padding-left: 20px; }
 
 details details details summary { padding-left: 100px; }
 
-details details details p { padding-left: 120px; }
+details details details p { padding-left: 140px; }
