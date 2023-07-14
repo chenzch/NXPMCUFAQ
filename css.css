@@ -1,0 +1,26 @@
+a:link {
+    text-decoration: underline;
+    color: black
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: blue
+}
+
+a:visited {
+    text-decoration: underline;
+    color: black
+}
+
+summary {
+    padding-left: 40px;
+}
+
+p {
+    padding-left: 80px;
+}
