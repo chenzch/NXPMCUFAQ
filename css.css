@@ -17,10 +17,20 @@ a:visited {
     color: black
 }
 
-summary {
-    padding-left: 40px;
-}
+details { padding-left: 40px; }
 
-p {
-    padding-left: 80px;
-}
+details summary { padding-left: 60px; }
+
+details p { padding-left: 80px; }
+
+details details { padding-left: 60px; }
+
+details details summary { padding-left: 80px; }
+
+details details p { padding-left: 100px; }
+
+details details details { padding-left: 80px; }
+
+details details details summary { padding-left: 100px; }
+
+details details details p { padding-left: 120px; }
