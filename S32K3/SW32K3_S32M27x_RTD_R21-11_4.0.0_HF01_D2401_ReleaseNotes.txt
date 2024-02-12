@@ -1,0 +1,155 @@
+==========================================================================================
+Release Notes for NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01
+==========================================================================================
+
+#  NXP(TM) and the NXP logo are trademarks of NXP.
+#  
+#  All other product or service names are the property of their respective owners.
+#  Copyright 2020 - 2024 NXP
+#  
+#  NXP Confidential and Proprietary. This software is owned or controlled by NXP and may only  
+#  be used strictly in accordance with the applicable license terms. By
+#  expressly accepting such terms or by downloading, installing, activating
+#  and/or otherwise using the software, you are agreeing that you have read,
+#  and that you agree to comply with and are bound by, such license terms. If
+#  you do not agree to be bound by the applicable license terms, then you may
+#  not retain, install, activate or otherwise use the software
+==========================================================================================
+Introduction
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01.
+==========================================================================================
+
+Package content
+This package contains files for
+NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01.
+==========================================================================================
+This release contains the NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF01:
+• "eclipse/plugins/<mod>_TS_T40D34M40I0R0" directories - Tresos Plugins, 1 per
+module.
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401.exe"
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_ReleaseNotes.txt" - This file.
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_SCR.txt"
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_DS_updatesite.zip"
+• Various other files: GettingStarted.htm start page and associated images, the
+license.txt EULA file and the Uninstall.exe utility for removing the RTD installation.
+
+==========================================================================================
+Installation
+==========================================================================================
+Installation Design Studio
+  Bundled in S32 Design Studio
+    S32 RTD is delivered bundled in the S32 Design Studio. In this case, it's already
+    configured and ready to use. New S32DS project wizard and New S32DS project from
+    Example can be used to create S32 RTD based projects.
+  Delivered as an extension for S32 Design Studio
+    S32 RTD is delivered as an Update Site for S32 Design Studio "S32 Design Studio 3.5 Update 8".
+    In this case, it must be installed by opening Help -> S32 Design Studio
+    Extensions and Updates -> Add Update Sites and selecting the archive file containing
+    the S32 RTD software and then check the S32 RTD software package to be installed and
+    continue the installation process. After it is installed, New S32DS project wizard
+
+Installation EB Tresos
+    Follow the installer steps. By default the installer will create a link between the installation
+    target directory and a selected EB Tresos installation. If you choose not to create a link,
+    you can later create one manually or you can copy all "<mod>_TS_T40D34M40I0R0"
+    directories and .JAR files to the "<Tresos Install Path>\plugins" directory.
+    The S32K3_S32M27X Real-Time Drivers Version 4.0.0 HF01 is AUTOSAR R21-11 compliant. The AUTOSAR
+    Configuration ARXML specification takes precedence over AUTOSAR SWS PDF
+    Specifications if there are discrepancies.
+    The S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF01 can be used also in non-AUTOSAR
+    environment, as a collection of peripheral drivers designed to simplify and accelerate
+    application development on NXP microcontrollers.
+
+Release Specifics:
+==========================================================================================
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01 that contain the fixes on MCL and MEMACC drivers. 
+This release contains all drivers from S32K3_S32M27X Real-Time Drivers release Version 4.0.0 release. 
+Hot Fix Releases are not fully qualified and are not intended for production,
+they must be replaced by the next qualified standard release.
+The intention of a Hot Fix Release is immediate fix of a critical and blocking issue at the customer.
+
+- Note: newer hotfixes for the same module are cumulative.
+
+Support and Driver Plugins Delivered:
+=====================================
+    Adc_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Analog-Digital Converter
+    Ae_TS_T40D34M40I0R0                    sw version 4.0.0         Driver, Application Extension
+    BaseNXP_TS_T40D34M40I0R0               sw version 4.0.0         Base Module, General AUTOSAR and Hardware Specific register files
+    Can_43_FLEXCAN_TS_T40D34M40I0R0        sw version 4.0.0         Driver, Controller Area Network
+    Cantrcv_TS_T40D34M40I0R0               sw version 4.0.0         Driver, Can Transceiver
+    CanIf_TS_T40D34M40I0R0                 sw version 4.0.0         Support Stub, Controller Area Network Interface
+    Crypto_43_HSE_TS_T40D34M40I0R0         sw version 4.0.0         Driver, Hardware Security Engine
+    Csm_TS_T40D34M40I0R0                   sw version 4.0.0         Support Stub, Crypto Interface
+    Cryif_TS_T40D34M40I0R0                 sw version 4.0.0         Support Stub, Crypto Service Manager
+    Dem_TS_T40D34M40I0R0                   sw version 4.0.0         Support Stub, Diagnostic Event Manager
+    Det_TS_T40D34M40I0R0                   sw version 4.0.0         Support Stub, Development Error Tracer
+    Dio_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Digital Input Output
+    Dpga_TS_T40D34M40I0R0                  sw version 4.0.0         Driver, Differential Programmable Gain Amplifier
+    EcuC_TS_T40D34M40I0R0                  sw version 4.0.0         Support Stub, ECU Configuration
+    EcuM_TS_T40D34M40I0R0                  sw version 4.0.0         Support Stub, ECU State Manager
+    Eth_43_GMAC_TS_T40D34M40I0R0           sw version 4.0.0         Driver, Ethernet
+    EthIf_TS_T40D34M40I0R0                 sw version 4.0.0         Stub, Ethernet 
+    EthTrcv_TS_T40D34M40I0R0               sw version 4.0.0         Stub, Ethernet Tranceiver
+    Fee_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Flash Eeprom Emulation  
+    Gpt_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, General Purpose Timer
+    Gdu_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Gate Driver Uinit
+    I2c_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Inter-Integrated Circuit
+    I2s_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Inter 2 Sound Communication
+    Icu_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Input Capture Unit
+    Lin_43_LPUART_FLEXIO_TS_T40D34M40I0R0  sw version 4.0.0         Driver, Local Interconnect Network
+    Lintrcv_TS_T40D34M40I0R0               sw version 4.0.0         Driver, Lin Transceiver
+    LinIf_TS_T40D34M40I0R0                 sw version 4.0.0         Stub, Local Interconnect Network Interface
+    Mcl_TS_T40D34M40I0R0                   sw version 4.0.0 HF01    Driver, Microcontroller Library Driver
+    Mcu_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Microcontroller Unit
+    Mem_43_ExFls_TS_T40D34M40I0R0          sw version 4.0.0         Driver, Memory driver for the external flash     
+    Mem_43_InFls_TS_T40D34M40I0R0          sw version 4.0.0         Driver, Memory driver for the internal flash        
+    MemAcc_TS_T40D34M40I0R0                sw version 4.0.0 HF01    Driver, Memory Access
+    MemIf_TS_T40D34M40I0R0                 sw version 4.0.0         Stub, Memory Interface
+    Ocotp_TS_T40D34M40I0R0                 sw version 4.0.0         Driver, On-Chip One Time Programmable Controller
+    Ocu_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Output Compare Unit
+    Os_TS_T40D34M40I0R0                    sw version 4.0.0         Stub, Operating System
+    Pwm_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Pulse Width Modulation
+    Platform_TS_T40D34M40I0R0              sw version 4.0.0         Driver, Platform
+    Port_TS_T40D34M40I0R0                  sw version 4.0.0         Driver, Port
+    Resource_TS_T40D34M40I0R0              sw version 4.0.0         Driver, Resource Module
+    RM_TS_T40D34M40I0R0                    sw version 4.0.0         Driver, Resource Mananger
+    Rte_TS_T40D34M40I0R0                   sw version 4.0.0         Support Stub, only for Schedule Manager
+    Sent_TS_T40D34M40I0R0                  sw version 4.0.0         Driver, Single Edge Nibble Transmission
+    Spi_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Serial Peripheral Interface
+    Uart_TS_T40D34M40I0R0                  sw version 4.0.0         Driver, UART
+    Wdg_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Watchdog
+    WdgIf_TS_T40D34M40I0R0                 sw version 4.0.0         Stub, Watchdog Interface
+    Zipwire_TS_T40D34M40I0R0               sw version 4.0.0         Driver, Zipwire
+
+
+Compilers Version
+==========================================================================================
+This release was developed and tested with:
+• NXP GCC 10.2.0 20200723
+• Green Hills Multi 7.1.6d / Compiler 2021.1.4
+• IAR ANSI C/C++ Compiler v.8.50.10 (safety version)
+• Wind River Diab Compiler v7.0.4 (for S32K358, S32K312, S32K388, S32K344 and their sub-derivaties
+(S32K324, S32K314, S32K328, S32K338, S32K348))  
+==========================================================================================
+Configuration Tools Version
+==========================================================================================
+    EB tresos Studio 29.0.0
+    S32 Configuration Tools Framework (S32CT 1.7 Update 4 ) 
+    S32 Design Studio 3.5 Update 8
+
+
+==========================================================================================
+Release Details:
+==========================================================================================
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01 that contain the fixes on MCL and MEMACC drivers as list below.
+
+==========================================================================================
+What's Modified v4.0.0 hf01
+==========================================================================================
+    ARTD-105430: MCL]: Invalidate cache line works abnormal in some case
+    ARTD-104259 [MemAcc]: Fee swap error when the read & write burst size configured to 128
+
+==========================================================================================
+What's Modified v4.0.0
+==========================================================================================
+    Please refer to the file "SW32K3_S32M27x_RTD_R21-11_4.0.0_D2311_ReleaseNotes.pdf" delivered with the RTM 4.0.0 release.
