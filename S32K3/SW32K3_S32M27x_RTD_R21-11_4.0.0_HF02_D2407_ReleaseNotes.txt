@@ -1,5 +1,5 @@
 ==========================================================================================
-Release Notes for NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01
+Release Notes for NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 02
 ==========================================================================================
 
 #  NXP(TM) and the NXP logo are trademarks of NXP.
@@ -16,20 +16,20 @@ Release Notes for NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0
 #  not retain, install, activate or otherwise use the software
 ==========================================================================================
 Introduction
-This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01.
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 02.
 ==========================================================================================
 
 Package content
 This package contains files for
-NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01.
+NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 02.
 ==========================================================================================
-This release contains the NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF01:
+This release contains the NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF02:
 • "eclipse/plugins/<mod>_TS_T40D34M40I0R0" directories - Tresos Plugins, 1 per
 module.
-• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401.exe"
-• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_ReleaseNotes.txt" - This file.
-• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_SCR.txt"
-• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF01_D2401_DS_updatesite.zip"
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF02_D2407.exe"
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF02_D2407_ReleaseNotes.txt" - This file.
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF02_D2407_SCR.txt"
+• "SW32K3_S32M27x_RTD_R21-11_4.0.0_HF02_D2407_DS_updatesite.zip"
 • Various other files: GettingStarted.htm start page and associated images, the
 license.txt EULA file and the Uninstall.exe utility for removing the RTD installation.
 
@@ -53,17 +53,17 @@ Installation EB Tresos
     target directory and a selected EB Tresos installation. If you choose not to create a link,
     you can later create one manually or you can copy all "<mod>_TS_T40D34M40I0R0"
     directories and .JAR files to the "<Tresos Install Path>\plugins" directory.
-    The S32K3_S32M27X Real-Time Drivers Version 4.0.0 HF01 is AUTOSAR R21-11 compliant. The AUTOSAR
+    The S32K3_S32M27X Real-Time Drivers Version 4.0.0 HF02 is AUTOSAR R21-11 compliant. The AUTOSAR
     Configuration ARXML specification takes precedence over AUTOSAR SWS PDF
     Specifications if there are discrepancies.
-    The S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF01 can be used also in non-AUTOSAR
+    The S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 HF02 can be used also in non-AUTOSAR
     environment, as a collection of peripheral drivers designed to simplify and accelerate
     application development on NXP microcontrollers.
 
 Release Specifics:
 ==========================================================================================
-This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01 that contain the fixes on MCL and MEMACC drivers. 
-This release contains all drivers from S32K3_S32M27X Real-Time Drivers release Version 4.0.0 release. 
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 02 that contain the fixes on Mem_Infls drivers. 
+This release contains all drivers from S32K3_S32M27X Real-Time Drivers release Version 4.0.0 HF01 release. 
 Hot Fix Releases are not fully qualified and are not intended for production,
 they must be replaced by the next qualified standard release.
 The intention of a Hot Fix Release is immediate fix of a critical and blocking issue at the customer.
@@ -102,7 +102,7 @@ Support and Driver Plugins Delivered:
     Mcl_TS_T40D34M40I0R0                   sw version 4.0.0 HF01    Driver, Microcontroller Library Driver
     Mcu_TS_T40D34M40I0R0                   sw version 4.0.0         Driver, Microcontroller Unit
     Mem_43_ExFls_TS_T40D34M40I0R0          sw version 4.0.0         Driver, Memory driver for the external flash     
-    Mem_43_InFls_TS_T40D34M40I0R0          sw version 4.0.0         Driver, Memory driver for the internal flash        
+    Mem_43_InFls_TS_T40D34M40I0R0          sw version 4.0.0 HF02    Driver, Memory driver for the internal flash        
     MemAcc_TS_T40D34M40I0R0                sw version 4.0.0 HF01    Driver, Memory Access
     MemIf_TS_T40D34M40I0R0                 sw version 4.0.0         Stub, Memory Interface
     Ocotp_TS_T40D34M40I0R0                 sw version 4.0.0         Driver, On-Chip One Time Programmable Controller
@@ -141,12 +141,17 @@ Configuration Tools Version
 ==========================================================================================
 Release Details:
 ==========================================================================================
-This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 01 that contain the fixes on MCL and MEMACC drivers as list below.
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 4.0.0 Hot Fix 02 that contain the fixes on Mem_Infls drivers as list below.
+
+==========================================================================================
+What's Modified v4.0.0 hf02
+==========================================================================================
+    ARTD-137307 [Mem_Infls] Async mode is not completely asynchronous
 
 ==========================================================================================
 What's Modified v4.0.0 hf01
 ==========================================================================================
-    ARTD-105430: MCL]: Invalidate cache line works abnormal in some case
+    ARTD-105430 [MCL]: Invalidate cache line works abnormal in some case
     ARTD-104259 [MemAcc]: Fee swap error when the read & write burst size configured to 128
 
 ==========================================================================================
