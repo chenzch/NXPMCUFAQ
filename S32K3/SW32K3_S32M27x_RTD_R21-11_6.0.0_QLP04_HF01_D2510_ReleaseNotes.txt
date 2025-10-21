@@ -1,0 +1,321 @@
+==========================================================================================
+Release Notes for NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01
+==========================================================================================
+
+#  NXP(TM) and the NXP logo are trademarks of NXP.
+#
+#  All other product or service names are the property of their respective owners.
+#  Copyright 2020 - 2025 NXP
+#
+#  NXP Confidential and Proprietary. This software is owned or controlled by NXP and may only
+#  be used strictly in accordance with the applicable license terms. By
+#  expressly accepting such terms or by downloading, installing, activating
+#  and/or otherwise using the software, you are agreeing that you have read,
+#  and that you agree to comply with and are bound by, such license terms. If
+#  you do not agree to be bound by the applicable license terms, then you may
+#  not retain, install, activate or otherwise use the software
+==========================================================================================
+Introduction
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01.
+==========================================================================================
+
+Package content
+This package contains files for
+NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01.
+==========================================================================================
+This release contains the NXP S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01:
+• "eclipse/plugins/<mod>_TS_T40D34M60I0R0" directories - Tresos Plugins, 1 per
+module.
+• "SW32K3_S32M27x_RTD_R21-11_6.0.0_QLP04_HF01_D2510.exe"
+• "SW32K3_S32M27x_RTD_R21-11_6.0.0_QLP04_HF01_D2510_ReleaseNotes.txt" - This file.
+• "SW32K3_S32M27x_RTD_R21-11_6.0.0_QLP04_HF01_D2510_SBOM.spdx.json"
+• "SW32K3_S32M27x_RTD_R21-11_6.0.0_QLP04_HF01_D2510_DesignStudio_updatesite.zip"
+• Various other files: GettingStarted.htm start page and associated images, the
+license.txt EULA file and the Uninstall.exe utility for removing the RTD installation.
+
+==========================================================================================
+Installation
+==========================================================================================
+Installation Design Studio
+  Bundled in S32 Design Studio
+    S32 RTD is delivered bundled in the S32 Design Studio. In this case, it's already
+    configured and ready to use. New S32DS project wizard and New S32DS project from
+    Example can be used to create S32 RTD based projects.
+
+  Delivered as an extension for S32 Design Studio
+    S32 RTD is delivered as an Update Site for S32 Design Studio "S32 Design Studio 3.6.1".
+    In this case, it must be installed by opening Help -> S32 Design Studio
+    Extensions and Updates -> Add Update Sites and selecting the archive file containing
+    the S32 RTD software and then check the S32 RTD software package to be installed and
+    continue the installation process. After it is installed, New S32DS project wizard
+    and New S32DS project from Example can be used to create S32 RTD based projects.
+
+
+Installation EB Tresos
+    Follow the installer steps. By default the installer will create a link between the installation
+    target directory and a selected EB Tresos installation. If you choose not to create a link,
+    you can later create one manually or you can copy all "<mod>_TS_T40D34M60I0R0"
+    directories and .JAR files to the "<Tresos Install Path>\plugins" directory.
+    The S32K3_S32M27X Real-Time Drivers Version 6.0.0 QLP04 Hot Fix 01 is AUTOSAR R21-11 compliant. The AUTOSAR
+    Configuration ARXML specification takes precedence over AUTOSAR SWS PDF
+    Specifications if there are discrepancies.
+    The S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01 can be used also in non-AUTOSAR
+    environment, as a collection of peripheral drivers designed to simplify and accelerate
+    application development on NXP microcontrollers.
+
+==========================================================================================
+Release Specifics:
+==========================================================================================
+This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01 that contain the fixes for PWM driver.
+This release contains all drivers from S32K3_S32M27X Real-Time Drivers release Version 6.0.0 QLP04 release.
+Hot Fix Releases are not fully qualified and are not intended for production,
+they must be replaced by the next qualified standard release.
+The intention of a Hot Fix Release is immediate fix of a critical and blocking issue at the customer.
+
+- Note: newer hotfixes for the same module are cumulative.
+
+==========================================================================================
+Release Details:
+==========================================================================================
+    This is the S32K3_S32M27X Real-Time Drivers AUTOSAR R21-11 Version 6.0.0 QLP04 Hot Fix 01 that contain the fixes for PWM as list below.
+
+==========================================================================================
+Used Documentation
+==========================================================================================
+    Reference Manual:
+        - S32K3xx Reference Manual || Rev.9, 07/2024
+        - S32M27x Reference Manual || Rev.5, 02/2025
+        - S32K39, S32K37 and S32K36 Reference Manual || Rev.4, 11/2024
+    Datasheet:
+        - S32K3xx Data Sheet || Rev.10, 07/2024
+        - S32M2xx Data Sheet || Rev.8, 02/2025
+        - S32K39 and S32K37 Data Sheet || Rev.4, 06/2024
+    Errata:
+        - S32K358 Mask Set Errata for Mask: 1P14E || Rev. 4, 6/2024
+        - S32K311 Mask Set Errata for Mask: 0P98C || Rev. 11/January/2024, 1/2024
+        - S32K396 Mask Set Errata for Mask: 0P40E|| Rev. FEB2024, 2/2024
+        - S32K396 Mask Set Errata for Mask: 1P40E || Rev. MAR2024, 3/2024
+        - S32K312 Mask Set Errata for Mask: 0P09C || Rev. 14/Dec/2023, 12/2023
+        - S32K342 Mask Set Errata for Mask: 0P97C || Rev. 14, 12/2023
+        - S32K344 Mask Set Errata for Mask: 0P55A/1P55A || Rev. 12/Dec/2023, 12/2023
+        - S32K388 Mask Set Errata for Mask: 0P39J/0P24N || Rev. 1, 7/2024
+        - S32M276 Mask Set Errata for Mask: P98C+P69K || Rev. 1, 8/2024
+        - S32K389 Mask Set Errata for Mask: mask_id || Rev. 1.1 — 18 September 2024
+
+==========================================================================================
+Supported derivatives
+==========================================================================================
+    - S32K312: S32K12_HDQFP172, S32K12_1HDQFP100
+    - S32K314: S32K14_MAPBGA257, S32K14_HDQFP172
+    - S32K324: S32K24_MAPBGA257, S32K24_HDQFP172
+    - S32K344: S32K44_MAPBGA257, S32K44_HDQFP172
+    - S32K342: S32K42_HDQFP100, S32K42_HDQFP172
+    - S32K341: S32K41_HDQFP100, S32K41_HDQFP172
+    - S32K322: S32K22_HDQFP100, S32K22_HDQFP172
+    - S32K358: S32K58_HDQFP172, S32K58_MAPBGA289
+    - S32K328, S32K338, S32K348 (sub-/phantom derivatives of S32K358): S32K328_HDQFP172, S32K328_ MAPBGA289, S32K338_HDQFP172, S32K338_ MAPBGA289, S32K348_HDQFP172, S32K348_ MAPBGA289
+    - S32K396: S32K96_ MAPBGA289 & S32K394_ MAPBGA289, S32K396_LQFP176, S32K394_LQFP176, S32K376_ MAPBGA289 & S32K374_ MAPBGA289, S32K376_LQFP176, S32K374_LQFP176, (sub/phantom derivatives of S32K396), s32k364_mapbga289, s32k364_lqfp176, s32k366_mapbga289, s32k366_lqfp176 (phantom of S32K396)
+    - S32K311: S32K11_HDQFP100, S32K11_LQFP48 & S32K310_HDQFP100, S32K310_LQFP48 (sub/phantom derivativies of S32K311)
+    - S32M276: S32M276_LQFP64 & S32M274_LQFP64 (sub/phantom derivatives of S32M27x)
+    - K32K388: S32K388_mapbga289
+
+==========================================================================================
+Modules Configuration
+==========================================================================================
+    EB tresos Studio 29.0.0
+    S32 Configuration Tools Framework (S32CT 1.8 Update 2)
+    S32 Design Studio 3.6.1
+
+==========================================================================================
+Simulator Version
+==========================================================================================
+    S32K388: R5.1.1: 09_R5.1.1_S32K388_Release
+    S32K324: R1.0.1: 01_R1.0.1_S32K324_Release
+
+==========================================================================================
+Support and Driver Plugins Delivered:
+==========================================================================================
+    Adc_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Analog-Digital Converter
+    Ae_TS_T40D34M50I0R0                    sw version 6.0.0               Driver, Application Extension
+    BaseNXP_TS_T40D34M50I0R0               sw version 6.0.0               Base Module, General AUTOSAR and Hardware Specific register files
+    Can_43_FLEXCAN_TS_T40D34M50I0R0        sw version 6.0.0               Driver, Controller Area Network
+    CanIf_TS_T40D34M50I0R0                 sw version 6.0.0               Support Stub, Controller Area Network Interface
+    CanTrcv_43_AE_TS_T40D34M50I0R0         sw version 6.0.0               Driver, Can Transceiver
+    Crc_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Cyclic Redundancy Check
+    Dem_TS_T40D34M50I0R0                   sw version 6.0.0               Support Stub, Diagnostic Event Manager
+    Det_TS_T40D34M50I0R0                   sw version 6.0.0               Support Stub, Development Error Tracer
+    Dio_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Digital Input Output
+    Dpga_TS_T40D34M50I0R0                  sw version 6.0.0               Driver, Differential Programmable Gain Amplifier
+    EcuC_TS_T40D34M50I0R0                  sw version 6.0.0               Support Stub, ECU Configuration
+    EcuM_TS_T40D34M50I0R0                  sw version 6.0.0               Support Stub, ECU State Manager
+    Eth_43_GMAC_TS_T40D34M50I0R0           sw version 6.0.0               Driver, Ethernet
+    EthIf_TS_T40D34M50I0R0                 sw version 6.0.0               Support Stub, Ethernet Interface
+    EthSwt_TS_T40D34M50I0R0                sw version 6.0.0               Support Stub, Ethernet Switch
+    EthTrcv_TS_T40D34M50I0R0               sw version 6.0.0               Support Stub, Ethernet Transceiver
+    Fee_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Flash Eeprom Emulation
+    Gdu_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Gate Driver Uinit
+    Gpt_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, General Purpose Timer
+    I2c_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Inter-Integrated Circuit
+    I2s_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Inter 2 Sound Communication
+    Icu_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Input Capture Unit
+    Lin_43_LPUART_FLEXIO_TS_T40D34M50I0R0  sw version 6.0.0               Driver, Local Interconnect Network
+    LinIf_TS_T40D34M50I0R0                 sw version 6.0.0               Support Stub, Local Interconnect Network Interface
+    LinTrcv_43_AE_TS_T40D34M50I0R0         sw version 6.0.0               Driver, Lin Transceiver
+    Mcl_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Microcontroller Library
+    Mcu_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Microcontroller Unit
+    Mem_43_EEP_TS_T40D34M50I0R0            sw version 6.0.0               Driver, Mem EEPROM
+    Mem_43_EXFLS_TS_T40D34M50I0R0          sw version 6.0.0               Driver, Mem External Flash
+    Mem_43_INFLS_TS_T40D34M50I0R0          sw version 6.0.0               Driver, Mem Internal Flash
+    MemAcc_TS_T40D34M50I0R0                sw version 6.0.0               Driver, Memory Access
+    MemIf_TS_T40D34M50I0R0                 sw version 6.0.0               Support Stub, Memory Interface
+    Ocotp_TS_T40D34M50I0R0                 sw version 6.0.0               Driver, On-Chip One Time Programmable Controller
+    Ocu_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Output Compare Unit
+    Os_TS_T40D34M50I0R0                    sw version 6.0.0               Support Stub, Operating System
+    Platform_TS_T40D34M50I0R0              sw version 6.0.0               Driver, Platform
+    Port_TS_T40D34M50I0R0                  sw version 6.0.0 QLP04         Driver, Port
+    Pwm_TS_T40D34M50I0R0                   sw version 6.0.0 QLP04 HF01    Driver, Pulse Width Modulation
+    Resource_TS_T40D34M50I0R0              sw version 6.0.0               Driver, Resource Module
+    Rm_TS_T40D34M50I0R0                    sw version 6.0.0               Driver, Resource Mananger
+    Rte_TS_T40D34M50I0R0                   sw version 6.0.0               Support Stub, only for Schedule Manager
+    Sent_TS_T40D34M50I0R0                  sw version 6.0.0               Driver, Single edge nibble transmission
+    Spi_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Serial Peripheral Interface
+    Uart_TS_T40D34M50I0R0                  sw version 6.0.0               Driver, UART
+    Wdg_TS_T40D34M50I0R0                   sw version 6.0.0               Driver, Watchdog
+    WdgIf_TS_T40D34M50I0R0                 sw version 6.0.0               Support Stub, Watchdog Interface
+    Zipwire_TS_T40D34M50I0R0               sw version 6.0.0               Driver, Zipwire
+
+==========================================================================================
+Compilers versions and options 
+==========================================================================================
+This release was developed and tested with:
+• NXP GCC 10.2.0 20200723
+• Green Hills Multi 7.1.6d / Compiler 2021.1.4
+• IAR ANSI C/C++ Compiler v.8.50.10 (safety version)
+• Wind River Diab Compiler v7.0.6
+
+==========================================================================================
+Debugger
+==========================================================================================
+    Lauterbach Trace32
+
+==========================================================================================
+Examples
+==========================================================================================
+    Examples are not in scope for this release.  
+
+==========================================================================================
+Known limitation
+==========================================================================================
+    Drivers limitation are noted in User's Manual for each driver.
+
+==========================================================================================
+Changes List
+==========================================================================================
+    ARTDCT1-312: [PWM] eMIOS channel cannot be configured for PWM output mode on s32k366
+
+==========================================================================================
+Legal Information
+==========================================================================================
+Limited warranty and liability
+
+Information in this document is believed to be accurate and reliable. However, NXP
+Semiconductors does not give any representations or warranties, expressed or implied,
+as to the accuracy or completeness of such information and shall have no liability for the
+consequences of use of such information. NXP Semiconductors takes no responsibility
+for the content in this document if provided by an information source outside of NXP
+Semiconductors.
+In no event shall NXP Semiconductors be liable for any indirect, incidental, punitive,
+special or consequential damages (including - without limitation - lost profits, lost savings,
+business interruption, costs related to the removal or replacement of any products or
+rework charges) whether or not such damages are based on tort (including negligence),
+warranty, breach of contract or any other legal theory.
+Notwithstanding any damages that customer might incur for any reason whatsoever,
+NXP Semiconductors’ aggregate and cumulative liability towards customer for the
+products described herein shall be limited in accordance with the Terms and conditions of
+commercial sale of NXP Semiconductors.
+
+Right to make changes
+
+NXP Semiconductors reserves the right to make changes to information published in this
+document, including without limitation specifications and product descriptions, at any time
+and without notice. This document supersedes and replaces all information supplied prior
+to the publication hereof.
+
+Suitability for use in automotive applications
+
+This NXP product has been qualified for use in automotive applications. If this product is
+used by customer in the development of, or for incorporation into, products or services
+(a) used in safety critical applications or (b) in which failure could lead to death, personal
+injury, or severe physical or environmental damage (such products and services
+hereinafter referred to as “Critical Applications”), then customer makes the ultimate
+design decisions regarding its products and is solely responsible for compliance with
+all legal, regulatory, safety, and security related requirements concerning its products,
+regardless of any information or support that may be provided by NXP. As such,
+customer assumes all risk related to use of any products in Critical Applications and
+NXP and its suppliers shall not be liable for any such use by customer. Accordingly,
+customer will indemnify and hold NXP harmless from any claims, liabilities, damages and
+associated costs and expenses (including attorneys’ fees) that NXP may incur related to
+customer’s incorporation of any product in a Critical Application.
+
+Applications
+
+Applications that are described herein for any of these products are for illustrative
+purposes only. NXP Semiconductors makes no representation or warranty that
+such applications will be suitable for the specified use without further testing or
+modification.Customers are responsible for the design and operation of their applications
+and products using NXP Semiconductors products, and NXP Semiconductors accepts no
+liability for any assistance with applications or customer product design. It is customer’s
+sole responsibility to determine whether the NXP Semiconductors product is suitable
+and fit for the customer’s applications and products planned, as well as for the planned
+application and use of customer’s third party customer(s).Customers should provide
+appropriate design and operating safeguards to minimize the risks associated with their
+applications and products.
+NXP Semiconductors does not accept any liability related to any default, damage, costs
+or problem which is based on any weakness or default in the customer’s applications or
+products, or the application or use by customer’s third party customer(s).
+Customer is responsible for doing all necessary testing for the customer’s applications
+and products using NXP Semiconductors products in order to avoid a default of the
+applications and the products or of the application or use by customer’s third party
+customer(s).
+NXP does not accept any liability in this respect
+
+Terms and conditions of commercial sale
+
+NXP Semiconductors products are sold subject to the general terms and conditions of
+commercial sale, as published at http://www.nxp.com/profile/terms, unless otherwise
+agreed in a valid written individual agreement. In case an individual agreement is
+concluded only the terms and conditions of the respective agreement shall apply. NXP
+Semiconductors hereby expressly objects to applying the customer’s general terms and
+conditions with regard to the purchase of NXP Semiconductors products by customer.
+
+Export control
+
+This document as well as the item(s) described herein may be subject to export control
+regulations. Export might require a prior authorization from competent authorities.
+
+Translations
+
+A non-English (translated) version of a document, including the legal information in
+that document, is for reference only. The English version shall prevail in case of any
+discrepancy between the translated and English versions.
+
+Security
+
+Customer understands that all NXP products may be subject to unidentified
+vulnerabilities or may support established security standards or specifications with known
+limitations. Customer is responsible for the design and operation of its applications
+and products throughout their lifecycles to reduce the effect of these vulnerabilities on
+customer’s applications and products. Customer’s responsibility also extends to other
+open and/or proprietary technologies supported by NXP products for use in customer’s
+applications. NXP accepts no liability for any vulnerability. Customer should regularly
+check security updates from NXP and follow up appropriately.
+Customer shall select products with security features that best meet rules, regulations,
+and standards of the intended application and make the ultimate design decisions
+regarding its products and is solely responsible for compliance with all legal, regulatory,
+and security related requirements concerning its products, regardless of any information
+or support that may be provided by NXP.
+NXP has a Product Security Incident Response Team (PSIRT) (reachable at
+PSIRT@nxp.com) that manages the investigation, reporting, and solution release to
+security vulnerabilities of NXP products.
+NXP B.V.
+NXP B.V. is not an operating company and it does not distribute or sell products.
